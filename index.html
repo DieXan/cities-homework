@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра в города</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="nav">
+            <p><a href="./about.html">О нас</a></p>
+            <p><a href="./">Игра</a></p>
+        </div>
+        <h1>Игра в города</h1>
+        
+        <div id="game-status">
+            <p>Ваш ход. Введите название города.</p>
+        </div>
+        
+        <input type="text" id="city-input" placeholder="Введите город" />
+        <button id="submit-city">Отправить</button>
+
+        <div id="log">
+            <h3>История ходов:</h3>
+            <ul id="history"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

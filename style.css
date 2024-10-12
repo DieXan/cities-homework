@@ -1,0 +1,129 @@
+/* Общие настройки */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Основной контейнер игры */
+.game-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-bottom: -30px;    
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #b0bec5;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #bb86fc;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #bb86fc;
+}
+
+a:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+
+/* Заголовок */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #bb86fc;
+}
+
+/* Статус игры */
+#game-status {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #b0bec5;
+}
+
+/* О нас */
+#about-us {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #b0bec5;
+}
+
+/* Поле ввода */
+#city-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #bb86fc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Кнопка */
+#submit-city {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-city:hover {
+    background-color: #a272f7;
+}
+
+/* История ходов */
+#log {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#log h3 {
+    font-size: 1.5rem;
+    color: #bb86fc;
+    margin-bottom: 10px;
+}
+
+#history {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history li {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
